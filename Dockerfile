@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 
 MAINTAINER Matthew Upson
-LABEL date="2016-11-28"
-LABEL version="0.1.0"
+LABEL date="2016-11-29"
+LABEL version="0.1.1-rap-demo-md"
 LABEL description="Reproducible Analytical Pipeline environment"
 
 # Update server and install git (probably already installed)
@@ -32,10 +32,20 @@ RUN apt-get install -y libcurl4-openssl-dev libxml2-dev libxslt-dev
 
 WORKDIR /RAP
 
-COPY ./setup.R /RAP/
+# Clone to RAP-demo-md repo into RAP
+
+RUN git clone https://github.com/UKGov-Data-Science/RAP-demo-md.git RAP-demo-md
 
 # Run setup in R to install required packages
 
+COPY ./setup.R /RAP/
+
 RUN chmod +x setup.R \ 
     && Rscript setup.R
+
+ENTRYPOINT ["Rscript"]
+
+# List Arguments for compilation (might be better as a script)
+
+CMD ["-e","rmarkdown::render(input='index.Rmd',output_format='html_document',output_file='index.html')"]
 
