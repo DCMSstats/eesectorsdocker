@@ -1,3 +1,5 @@
+[![GitHub tag](https://img.shields.io/github/tag/UKGov-Data-Science/RAP-docker.svg)]()
+
 # RAP docker image
 
 This repo allows the building of stable environments for the production of Reproducible Analytical Pipelines for statistics production.
