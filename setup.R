@@ -18,7 +18,7 @@ install.packages(
 # Install packages required for RAP-demo
 
 devtools::install_github('mangothecat/visualTest')
-devtools::install_github('UKGov-Data-Science/govstyle')
-devtools::install_github('UKGov-Data-Science/EESectors')
-devtools::install_github('UKGov-Data-Science/RAP-demo')
+devtools::install_github('ukgovdatascience/govstyle')
+devtools::install_github('ukgovdatascience/EESectors')
+devtools::install_github('ukgovdatascience/RAP-demo')
 
