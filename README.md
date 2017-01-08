@@ -1,3 +1,4 @@
+[![Docker Automated build](https://img.shields.io/docker/automated/ukgovdatascience/rap-docker.svg)](https://hub.docker.com/r/ukgovdatascience/rap-docker/)
 [![GitHub tag](https://img.shields.io/github/tag/ukgovdatascience/RAP-docker.svg)]()
 
 # RAP docker image
