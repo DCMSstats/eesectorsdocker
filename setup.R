@@ -1,4 +1,4 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
 
 # Install checkpoint first to ensure appropriate versioning
 

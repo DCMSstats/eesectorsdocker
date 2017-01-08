@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 
 MAINTAINER Matthew Upson
-LABEL date="2016-11-30"
-LABEL version="0.0.0.9000"
+LABEL date="2017-01-08"
+LABEL version="0.0.0.9002"
 LABEL description="Reproducible Analytical Pipeline environment"
 
 # Update server and install git and R package dependencies 
@@ -36,7 +36,7 @@ WORKDIR /RAP
 
 # Clone to RAP-demo-md repo into RAP
 
-RUN git clone https://github.com/UKGov-Data-Science/RAP-demo-md.git RAP-demo-md
+RUN git clone https://github.com/ukgovdatascience/RAP-demo-md.git RAP-demo-md
 
 # Run setup in R to install required packages
 
