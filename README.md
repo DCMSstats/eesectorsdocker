@@ -8,4 +8,4 @@ This repo allows the building of stable environments for the production of Repro
 * https://github.com/ukgovdatascience/eesectors
 * https://github.com/ukgovdatascience/eesectorsmarkdown
 
-This container is automatically built at: <https://hub.docker.com/r/ukgovdatascience/rap-docker/> and can be pulled from docker using `docker pull ukgovdatascience/rap-docker`.
+This container is automatically built at: <https://hub.docker.com/r/ukgovdatascience/eesectors/> and can be pulled from docker using `docker pull ukgovdatascience/eesectors`.
